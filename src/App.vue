@@ -1,3 +1,7 @@
 <template>
-  Once placeholders are deleted, the project is almost empty... In this example, App.vue does not depend on any other component.
+  <HomePage />
 </template>
+
+<script setup>
+  import HomePage from './pages/HomePage.vue'
+</script>
