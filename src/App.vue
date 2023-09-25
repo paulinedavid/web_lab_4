@@ -1,17 +1,10 @@
 <template>
-  <BaseHeader />
-  <HomePage />
-  <BaseFooter />
+  <BaseLayout>
+    <HomePage />
+  </BaseLayout>
 </template>
 
 <script setup>
-import BaseHeader from './components/BaseHeader.vue'
+import BaseLayout from './components/BaseLayout.vue'
 import HomePage from './pages/HomePage.vue'
-import BaseFooter from './components/BaseFooter.vue'
 </script>
-
-<style>
-:root {
-  font-family: Arial, Helvetica, sans-serif;
-}
-</style>
