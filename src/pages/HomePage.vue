@@ -52,12 +52,17 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
 import BaseButton from '../components/BaseButton.vue'
 import BaseAsyncButton from '../components/BaseAsyncButton.vue'
 
+var count = ref(0);
+
 function myPromise() {
+    count.value += 1;
     return new Promise((resolveInner) => {
-        setTimeout(resolveInner, 2000);
+        setTimeout(resolveInner, (count.value * 1000) + 1000);
     })
 }
 </script>
