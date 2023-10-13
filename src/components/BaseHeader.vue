@@ -3,9 +3,19 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">My Account</a></li>
+            <li> <sign-in-button @click="signIn">Sign In</sign-in-button></li>
         </ul>
     </div>
 </template>
+
+<script>
+import SignInButton from '@/components/SignInButton.vue';
+export default {
+  components: {
+    SignInButton
+  }
+};
+</script>
 
 <style scoped>
 #header {
